@@ -2,24 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-/ {
-    displays {
-        compatible = "ssd1306";
-        label = "SSD1306";
-        width = <128>;
-        height = <32>;
-        address = <0x3C>;
-        i2c = <&i2c1>;
-    };
-};
-
-&oled_display {
-    status {
-        display_layers = true;
-        display_wpm = true;
-    };
-};
-
 
 &led_strip {
     chain-length = <0>;
